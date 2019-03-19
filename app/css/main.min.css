@@ -238,9 +238,6 @@ p {
 .hamburger-inner::after {
   height: 2px; }
 
-.test {
-  height: 100vh; }
-
 .content_video {
   overflow: hidden;
   height: 100vh;
@@ -447,6 +444,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px; }
+  .content_video__subscribe__form input {
+    border: none;
+    border-radius: 2px; }
   .content_video__subscribe__form input[type="submit"] {
     grid-column: span 2;
     padding: 15px;
