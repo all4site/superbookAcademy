@@ -1,0 +1,27 @@
+{
+  "name": "all4site_scroll_top",
+  "authors": [
+    "All4site <35457395+all4site@users.noreply.github.com>"
+  ],
+  "description": "Перемотка к верху страницы sass надо добавить самому",
+  "main": "dist/scroll_top_page.js",
+  "license": "MIT",
+  "homepage": "https://github.com/all4site/all4site_scroll_top",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "adc3554712",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "adc3554712b63225c3d8063a24cbb43df277a536"
+  },
+  "_source": "https://github.com/all4site/all4site_scroll_top.git",
+  "_target": "*",
+  "_originalSource": "all4site_scroll_top",
+  "_direct": true
+}

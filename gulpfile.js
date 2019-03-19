@@ -97,7 +97,7 @@ gulp.task('browser-sync', function () {
 gulp.task('bower', function () {
 	gulp.src(['app/_header.pug', 'app/_footer.pug'])
 		.pipe(wiredep({
-			diewctory: 'app/wendor'
+			directory: 'app/wendor'
 		}))
 		.pipe(gulp.dest('app'))
 		.pipe(browserSync.reload({

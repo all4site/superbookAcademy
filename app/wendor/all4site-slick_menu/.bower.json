@@ -1,0 +1,28 @@
+{
+  "name": "all4site-slick_menu",
+  "version": "0.0.1",
+  "authors": [
+    "All4site <35457395+all4site@users.noreply.github.com>"
+  ],
+  "description": "Липкое меню sass надо подключать самому",
+  "main": "dist/slick_menu.js",
+  "license": "MIT",
+  "homepage": "https://github.com/all4site/all4site-slick_menu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "e5642017adb596da405c01a9d311a7ef53f532a8"
+  },
+  "_source": "https://github.com/all4site/all4site-slick_menu.git",
+  "_target": "^0.0.1",
+  "_originalSource": "all4site-slick_menu",
+  "_direct": true
+}

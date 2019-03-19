@@ -1,0 +1,28 @@
+{
+  "name": "all4site_mobile_menu",
+  "version": "0.0.1",
+  "authors": [
+    "All4site <35457395+all4site@users.noreply.github.com>"
+  ],
+  "description": "Мобильное выпадающее меню sass надо копировать отдельно",
+  "main": "dist/mobile_menu.js",
+  "license": "MIT",
+  "homepage": "https://github.com/all4site/all4site_mobile_menu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "ff92c50e20a6e6fd4222b8c163938a01f45143c8"
+  },
+  "_source": "https://github.com/all4site/all4site_mobile_menu.git",
+  "_target": "^0.0.1",
+  "_originalSource": "all4site_mobile_menu",
+  "_direct": true
+}
