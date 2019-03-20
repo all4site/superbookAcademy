@@ -1,9 +1,8 @@
 .content_video
 	overflow: hidden
-	height: 100vh
 	position: relative
 	display: grid
-	padding-bottom: 100px
+	padding-bottom: 150px
 
 .content_video__background
 	position: absolute
@@ -13,17 +12,26 @@
 
 .content_video__wrap
 	display: grid
-	margin-top: 57px
+	margin-top: 62px
 	z-index: 999
-	grid-auto-rows: 3fr 1fr
+	grid-auto-rows: min-content
 	grid-auto-columns: minmax(200px, 1100px)
 	justify-self: center
+
+	video
+		position: absolute
+		width: 100%
+		height: 100%
 
 	.mejs__poster
 		height: auto !important
 
 	.mejs__container
 		background: none
+		width: 100%
+		height: 0 !important
+		position: relative
+		padding-bottom: 56%
 
 	.mejs__controls:not([style*='display: none'])
 		background: none
@@ -33,7 +41,7 @@
 
 // START CONTENT_IMG
 .content_img
-	height: 400px
+	max-height: 400px
 	overflow: hidden
 
 	img
@@ -53,8 +61,13 @@
 	grid-column-gap: 100px
 
 .content_robik__text
-	margin-top: 100px
+	margin-top: 5%
 	margin-left: 20%
+
+	span:nth-of-type(3)
+		color: $red
+		font-size: 1.5rem
+		font-weight: bold
 
 //END CONTENT_ROBIK
 
@@ -193,18 +206,16 @@
 	display: grid
 	font-size: 1.5rem
 	padding: 0px 50px 50px
+	grid-template-columns: min-content 1fr
+	align-items: center
 
 	li
 		position: relative
 
-		&:after
-			content: ""
-			position: absolute
-			background: url("../img/list_img.svg") no-repeat
-			width: 10px
-			height: 100%
-			top: 11px
-			left: -15px
+	.img_li
+		background: url('../img/list_img.svg') no-repeat
+		width: 15px
+		height: 15px
 
 // END CONTENT_MUSIC
 
@@ -213,6 +224,8 @@
 	background: lighten($black, 20%)
 	color: darken($white, 50%)
 	padding: 20px 0
+
 	span
-		font-size: .8rem
+		font-size: 0.8rem
+
 //END FOOTER
