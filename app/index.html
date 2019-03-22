@@ -3,7 +3,7 @@
 <head></head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge"/><!--build:css css/main.min.css-->
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/><!--build:css css/vendor.min.css-->
 <!--bower:css-->
 <link rel="stylesheet" href="wendor/all4site-fontawesome/dist/css/fontawesome-all.css" />
 <link rel="stylesheet" href="wendor/animate.css/animate.css" />
@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="wendor/all4site-hamburger/hamburgers.css" />
 <link rel="stylesheet" href="wendor/mediaelement/build/mediaelementplayer.css" />
 <!--endbower-->
-<link rel="stylesheet" href="css/main.min.css"/><!--endbuild-->
+<!--endbuild-->
+<link rel="stylesheet" href="css/main.min.css"/>
 <link rel="icon" href="img/favicon.png"/>
 <title>Академия Суперкниги</title>
 <body id="top">
@@ -19,15 +20,18 @@
   <nav class="menu_scroll" id="menu_top_big">
     <div class="wrap">
       <div class="menu_top_big__wrap">
-        <div class="menu_top_big__logo"><a href="#!" target="_blank"><img src="img/SA_logo.png" alt=""/></a></div>
+        <div class="menu_top_big__logo"><a href="#!" target="_blank"><img src="img/SA_Logo_ru.png" alt=""/></a></div>
         <div class="menu_top_big__navbar">
-          <ul class="menu_top_big__links"><a href="#!" data-target="menu">
-              <li class="active">Ссылка 1</li></a><a href="#!" data-target="menu">
-              <li>Ссылка 2</li></a><a href="#!" data-target="menu">
-              <li>Ссылка 3</li></a><a href="#!" data-target="menu">
-              <li>Ссылка 4</li></a><a href="#!" data-target="menu">
-              <li>Ссылка 5</li></a><a href="#!" data-target="menu">
-              <li>Ссылка 6</li></a></ul>
+          <ul class="menu_top_big__links"><a href="#robik" data-target="menu">
+              <li>Робик</li></a><a href="#episodes" data-target="menu">
+              <li>Эпизоды</li></a><a href="#bible" data-target="menu">
+              <li>Библия</li></a><a href="#video" data-target="menu">
+              <li>Видео</li></a><a href="#music" data-target="menu">
+              <li>Песня</li></a></ul>
+        </div>
+        <div class="menu_top_big__donate"><a class="btn_donate" href="#!">пожертвовать</a></div>
+        <div class="menu_top_big__lang"><a class="active_lang" href="index.html">ru</a>
+          <div class="menu_top_big__hr"></div><a href="index_ua.html">ua</a>
         </div>
       </div>
     </div>
@@ -35,7 +39,11 @@
   <nav class="menu_scroll" id="menu_top_small">
     <div class="wrap">
       <div class="menu_top_small__wrap">
+        <div class="menu_top_big__donate"><a class="btn_donate" href="#!">пожертвовать</a></div>
         <div class="menu_top_small__logo"><a href="#!" target="_blank"><img src="img/SA_logo.png" alt=""/></a></div>
+        <div class="menu_top_big__lang"><a class="active_lang" href="index.html">ru</a>
+          <div class="menu_top_big__hr"></div><a href="index_ua.html">ua</a>
+        </div>
         <div class="menu_top_small__humburger">
           <div class="hamburger hamburger--slider">
             <div class="hamburger-box">
@@ -45,13 +53,12 @@
         </div>
       </div>
       <div class="menu_top_small__dropdown">
-        <ul class="menu_top_small__links"><a href="#!" data-target="menu">
-            <li>Ссылка 1</li></a><a href="#!" data-target="menu">
-            <li>Ссылка 2</li></a><a href="#!" data-target="menu">
-            <li>Ссылка 3</li></a><a href="#!" data-target="menu">
-            <li>Ссылка 4</li></a><a href="#!" data-target="menu">
-            <li>Ссылка 5</li></a><a href="#!" data-target="menu">
-            <li>Ссылка 6</li></a></ul>
+        <ul class="menu_top_small__links"><a href="#robik" data-target="menu">
+            <li>Робик</li></a><a href="#episodes" data-target="menu">
+            <li>Эпизоды</li></a><a href="#bible" data-target="menu">
+            <li>Библия</li></a><a href="#video" data-target="menu">
+            <li>Видео</li></a><a href="#music" data-target="menu">
+            <li>Песня</li></a></ul>
       </div>
     </div>
   </nav>
@@ -60,7 +67,7 @@
     <div class="wrap">
       <div class="content_video__wrap">
         <div class="content_video__player">
-          <video controls="none" width="100%" height="100%" src="img/sleep.mp4" poster="img/vidoeplayer_kids-01.png"></video>
+          <video controls="none" width="100%" height="100%" src="img/top.mp4" poster="img/vidoeplayer_kids-01.png"></video>
         </div>
         <div class="content_video__subscribe">
           <div class="content_video__subscribe__text"><span class="h1">TRY SOMETHING NEW & EXCITING!</span><span>Instantly upgrade your Sunday, try a free course now!</span>
@@ -75,7 +82,7 @@
     </div>
   </section>
   <section class="content_img"><img src="img/ep110_thelastsupper-03.jpg" alt=""/></section>
-  <section class="content_robik">
+  <section class="content_robik" id="robik">
     <div class="content_robik__wrap">
       <div class="content_robik__text"><span>Take your class on an adventure with Chris, Joy and their robot Gizmo as they travel back in time to discover Biblical truths they can use every day. Gizmo and his friends also explain Biblical history and how each story points to Jesus! Kids around the world love Superbook animated Bible adventures. Try something new and bring the Bible to life with Superbook Academy!</span><br/><br/><span> Subscribe today so that you and your teachers can begin streaming videos in class and teaching directly from any connected mobile device. You can even print out lesson plans on demand. The curriculum format is flexible and can be used for all class sizes. Start each week with an exciting video to prepare your students for the lesson’s objectives. Your class will enjoy the in-depth Bible studies, fun games, and ready to print crafts that reinforce the Biblical truths.</span><br/><br/><span>Sign up now to gain instant access to our multi-year curriculum library.</span></div>
       <div class="content_robik__img"><img src="img/gizmo_waving_big.png" alt=""/></div>
@@ -83,7 +90,7 @@
   </section>
   <section class="content_bluebox">
     <div class="wrap">
-      <div class="content_bluebox__img"><img src="img/screen-shot-cc3333.jpg" alt=""/></div>
+      <div class="content_bluebox__img"><img src="img/screen_red_ru.png" alt=""/></div>
       <div class="content_bluebox__text">
         <p>Bring the Bible to life for your students with Superbook Academy for grades 1-6 (or K-5). This exciting digital Sunday School curriculum features animated Superbook® Bible adventures, and in-depth lesson plans that will challenge your students with engaging, Christ-centered learning experiences.</p>
       </div>
@@ -98,11 +105,11 @@
       </div>
     </div>
   </section>
-  <section class="content_episodes">
+  <section class="content_episodes" id="episodes">
     <div class="wrap">
       <div class="content_episodes_wrap">
         <div class="content_episodes__video">
-          <video controls="none" width="100%" height="100%" src="img/sleep.mp4" poster="img/episodes_video_poster.jpg"></video>
+          <video controls="none" width="100%" height="100%" src="img/episodes.mp4" poster="img/episodes_video_poster.jpg"></video>
         </div>
         <div class="content_episodes__text">
           <h3 class="h3_blue">SUPERBOOK EPISODES</h3>
@@ -121,11 +128,11 @@
       </div>
     </div>
   </section>
-  <section class="content_bible">
+  <section class="content_bible" id="bible">
     <div class="wrap">
       <div class="content_episodes_wrap">
         <div class="content_episodes__video">
-          <video controls="none" width="100%" height="100%" src="img/sleep.mp4" poster="img/bible_video_poster.jpg"></video>
+          <video controls="none" width="100%" height="100%" src="img/bible.mp4" poster="img/bible_video_poster.jpg"></video>
         </div>
         <div class="content_episodes__text">
           <h3 class="h3_blue">BIBLE BACKGROUND VIDEOS</h3>
@@ -145,11 +152,11 @@
       </div>
     </div>
   </section>
-  <section class="content_signposts">
+  <section class="content_signposts" id="video">
     <div class="wrap">
       <div class="content_episodes_wrap">
         <div class="content_episodes__video">
-          <video controls="none" width="100%" height="100%" src="img/sleep.mp4" poster="img/signposts_video_poster.jpg"></video>
+          <video controls="none" width="100%" height="100%" src="img/signposts.mp4" poster="img/signposts_video_poster.jpg"></video>
         </div>
         <div class="content_episodes__text">
           <h3 class="h3_blue">SIGNPOSTS VIDEOS</h3>
@@ -168,7 +175,7 @@
       </div>
     </div>
   </section>
-  <section class="content_music">
+  <section class="content_music" id="music">
     <div class="wrap">
       <div class="content_episodes_wrap">
         <div class="content_episodes__video">
@@ -208,7 +215,7 @@
         <div class="footer__copuright"><span>© Copyright 2016 The Christian Broadcasting Network.</span></div>
       </div>
     </div>
-  </footer><!--build:js js/main.min.js-->
+  </footer><!--build:js js/vendor.min.js-->
 <!--bower:js-->
 <script src="wendor/jquery/dist/jquery.js"></script>
 <script src="wendor/all4site-jqueryui/jquery-ui.js"></script>
@@ -217,5 +224,6 @@
 <script src="wendor/all4site_mobile_menu/dist/mobile_menu.js"></script>
 <script src="wendor/mediaelement/build/mediaelement-and-player.js"></script>
 <!--endbower-->
-  <script src="js/main.js"></script><!--endbuild-->
+<!--endbuild-->
+<script src="js/main.js"></script>
 </body>

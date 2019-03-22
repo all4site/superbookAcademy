@@ -8,6 +8,22 @@ $(document).ready(function () {
 		features: ['playpause', 'fullscreen']
 	});
 });
+$(document).ready(function () {
+	$('.content_episodes__video video').mediaelementplayer({
+		pauseOtherPlayers: true,
+		stretching: 'none',
+		enableAutosize: false,
+		autosizeProgress: false,
+	});
+});
+$(document).ready(function () {
+	$('.content_bluebox__video video').mediaelementplayer({
+		pauseOtherPlayers: true,
+		stretching: 'none',
+		enableAutosize: false,
+		autosizeProgress: false,
+	});
+});
 // END Video PLYER
 
 //START SMOOTH SCROLL

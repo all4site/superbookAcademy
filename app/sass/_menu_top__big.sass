@@ -6,7 +6,7 @@
 	grid-auto-flow: column
 	align-items: center
 	display: grid
-	grid-column-gap: 50px
+	grid-column-gap: 30px
 
 .menu_top_big__logo
 	display: grid
@@ -18,12 +18,17 @@
 	a
 		display: grid
 
+.menu_top_big__navbar
+	display: grid
+	grid-template-columns: minmax(420px, 1fr)
+
 .menu_top_big__links
 	display: grid
 	grid-auto-flow: column
 	font-weight: bold
-	font-size: 20px
+	font-size: 1.1rem
 	justify-items: end
+	text-transform: uppercase
 
 	li
 		transition: color 0.5s ease

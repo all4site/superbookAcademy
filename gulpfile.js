@@ -19,16 +19,15 @@ var gulp = require('gulp'),
 // BUILD
 gulp.task('build', ['clean', 'tiny', 'combine'], function () {
 	var buildFonts = gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'))
-	var buildFonts = gulp.src('app/js/all4site-fontawesome/dist/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts/'))
+		.pipe(gulp.dest('dist/fonts'));
+	var buildFonts = gulp.src('app/wendor/all4site-fontawesome/dist/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts/'));
 	var buildFonts = gulp.src('app/img/*.svg')
-		.pipe(gulp.dest('dist/img/'))
-	var buildUncss = gulp.src('dist/css/main.min.css')
-		.pipe(uncss({
-			html: ['dist/index.html']
-		}))
+		.pipe(gulp.dest('dist/img/'));
+	var buildCss = gulp.src('app/css/main.min.css')
 		.pipe(gulp.dest('dist/css'));
+	var buildJs = gulp.src('app/js/main.js')
+		.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('tiny', function () {
@@ -39,7 +38,7 @@ gulp.task('tiny', function () {
 });
 
 gulp.task('combine', function () {
-	return gulp.src(['app/*.pug','!app/*.pug'])
+	return gulp.src(['app/*.pug','!app/_*.pug'])
 		.pipe(jade({
 			pretty: true
 		}))

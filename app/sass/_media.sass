@@ -39,6 +39,12 @@
 
 //  Small Devices, Tablets
 @media only screen and (max-width: 768px)
+	.menu_top_big__donate
+		display: none
+
+	.menu_top_small__wrap
+		grid-auto-columns: minmax(100px, 250px) 1fr min-content
+
 	.content_robik__wrap
 		grid-auto-columns: minmax(200px, 1170px)
 		padding: 0 10px
@@ -96,9 +102,9 @@
 		padding: 0 0 20px 0
 		grid-row-gap: 10px
 
-
 	.content_list__wrap .btn
 		padding: 20px 10px
+
 //  Custom, iPhone Retina
 // @media only screen and (max-width: 320px)
 // //
