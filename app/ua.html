@@ -6,17 +6,8 @@
 <head></head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<!--build:css css/main.min.css-->
-<!--bower:css-->
-<link rel="stylesheet" href="wendor/all4site-fontawesome/dist/css/fontawesome-all.css" />
-<link rel="stylesheet" href="wendor/animate.css/animate.css" />
-<link rel="stylesheet" href="wendor/all4site-normalize/normalize.css" />
-<link rel="stylesheet" href="wendor/all4site-hamburger/hamburgers.css" />
-<link rel="stylesheet" href="wendor/mediaelement/build/mediaelementplayer.css" />
-<!--endbower-->
+<link rel="stylesheet" href="css/vendor.min.css">
 <link rel="stylesheet" href="css/main.min.css" />
-<!--endbuild-->
 <link rel="icon" href="img/favicon.png" />
 <title>Академия Суперкниги</title>
 
@@ -28,7 +19,7 @@
 				<div class="menu_top_big__logo"><a href="#!" target="_blank"><img src="img/SA_Logo_ru.png" alt="" /></a></div>
 				<div class="menu_top_big__navbar">
 					<ul class="menu_top_big__links"><a href="#robik" data-target="menu">
-							<li class="active">Робик</li>
+							<li>Робик</li>
 						</a><a href="#episodes" data-target="menu">
 							<li>Эпизоды</li>
 						</a><a href="#bible" data-target="menu">
@@ -40,8 +31,8 @@
 						</a></ul>
 				</div>
 				<div class="menu_top_big__donate"><a class="btn_donate" href="#!">пожертвовать</a></div>
-				<div class="menu_top_big__lang"><a class="active_lang" href="index.html">ru</a>
-					<div class="menu_top_big__hr"></div><a href="index_ua.html">ua</a>
+				<div class="menu_top_big__lang"><a href="index.html">ru</a>
+					<div class="menu_top_big__hr"></div><a href="ua.html">ua</a>
 				</div>
 			</div>
 		</div>
@@ -49,7 +40,11 @@
 	<nav class="menu_scroll" id="menu_top_small">
 		<div class="wrap">
 			<div class="menu_top_small__wrap">
+				<div class="menu_top_big__donate"><a class="btn_donate" href="#!">пожертвовать</a></div>
 				<div class="menu_top_small__logo"><a href="#!" target="_blank"><img src="img/SA_logo.png" alt="" /></a></div>
+				<div class="menu_top_big__lang"><a href="index.html">ru</a>
+					<div class="menu_top_big__hr"></div><a href="ua.html">ua</a>
+				</div>
 				<div class="menu_top_small__humburger">
 					<div class="hamburger hamburger--slider">
 						<div class="hamburger-box">
@@ -59,18 +54,16 @@
 				</div>
 			</div>
 			<div class="menu_top_small__dropdown">
-				<ul class="menu_top_small__links"><a href="#!" data-target="menu">
-						<li>Ссылка 1</li>
-					</a><a href="#!" data-target="menu">
-						<li>Ссылка 2</li>
-					</a><a href="#!" data-target="menu">
-						<li>Ссылка 3</li>
-					</a><a href="#!" data-target="menu">
-						<li>Ссылка 4</li>
-					</a><a href="#!" data-target="menu">
-						<li>Ссылка 5</li>
-					</a><a href="#!" data-target="menu">
-						<li>Ссылка 6</li>
+				<ul class="menu_top_small__links"><a href="#robik" data-target="menu">
+						<li>Робик</li>
+					</a><a href="#episodes" data-target="menu">
+						<li>Эпизоды</li>
+					</a><a href="#bible" data-target="menu">
+						<li>Библия</li>
+					</a><a href="#video" data-target="menu">
+						<li>Видео</li>
+					</a><a href="#music" data-target="menu">
+						<li>Песня</li>
 					</a></ul>
 			</div>
 		</div>
@@ -114,7 +107,7 @@
 	</section>
 	<section class="content_bluebox">
 		<div class="wrap">
-			<div class="content_bluebox__img"><img src="img/screen-shot-cc3333.jpg" alt="" /></div>
+			<div class="content_bluebox__img"><img src="img/screen_red_ru.png" alt="" /></div>
 			<div class="content_bluebox__text">
 				<p>Bring the Bible to life for your students with Superbook Academy for grades 1-6 (or K-5). This exciting
 					digital Sunday School curriculum features animated Superbook® Bible adventures, and in-depth lesson plans that
@@ -255,16 +248,6 @@
 				<div class="footer__copuright"><span>© Copyright 2016 The Christian Broadcasting Network.</span></div>
 			</div>
 		</div>
-	</footer>
-	<!--build:js js/main.min.js-->
-	<!--bower:js-->
-	<script src="wendor/jquery/dist/jquery.js"></script>
-	<script src="wendor/all4site-jqueryui/jquery-ui.js"></script>
-	<script src="wendor/all4site-slick_menu/dist/slick_menu.js"></script>
-	<script src="wendor/all4site_scroll_top/dist/scroll_top_page.js"></script>
-	<script src="wendor/all4site_mobile_menu/dist/mobile_menu.js"></script>
-	<script src="wendor/mediaelement/build/mediaelement-and-player.js"></script>
-	<!--endbower-->
-	<script src="js/main.js"></script>
-	<!--endbuild-->
+		<script src="js/vendor.min.js"></script>
+		<script src="js/main.js"></script>
 </body>

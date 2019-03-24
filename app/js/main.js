@@ -47,3 +47,19 @@ $(document).ready(function () {
 	});
 });
 //END SMOOTH SCROLL
+
+//START LANGUAGE SWITCH
+$(document).ready(function () {
+	var str = document.location.pathname;
+	var str = str.replace(/\//g, '');
+
+	if (str == '' || str == 'index.html') {
+		$("a[href='index.html']").addClass('active_lang');
+	}
+	if (str == 'ua.html') {
+		$("a[href='ua.html']").addClass('active_lang');
+
+	}
+
+});
+//END LANGUAGE SWITCH
